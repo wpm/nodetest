@@ -24,5 +24,5 @@ First the unit tests in this module simply test the `add` function using expect-
 Next, they use the spy facility in Jasmine to create a mock of the `add` function which intercepts and keeps track of
 the calls to this function.
 
-Finally, call the `asyncAdd` function and verify its resolved value using the `eventually` idiom provided by the
+Finally, they call the `asyncAdd` function and verify its resolved value using the `eventually` idiom provided by the
 [chai-as-promised](https://github.com/domenic/chai-as-promised/) package.
