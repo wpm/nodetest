@@ -1,0 +1,34 @@
+{
+  "name": "node-jasmine-example",
+  "version": "0.0.1",
+  "description": "Example of how to write Jasmine unit tests for a Node.js module",
+  "keywords": [
+    "test",
+    "example",
+    "node",
+    "jasmine"
+  ],
+  "author": {
+    "name": "W.P. McNeill",
+    "email": "billmcn@gmail.com",
+    "url": "https://cornercases.wordpress.com"
+  },
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wpm/nodetest.git"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "bluebird": "*"
+  },
+  "devDependencies": {
+    "chai": "chai@>= 2.1.2 < 4",
+    "chai-as-promised": "*",
+    "istanbul": "*",
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/istanbul cover node_modules/.bin/jasmine-node test"
+  }
+}
