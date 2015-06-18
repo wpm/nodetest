@@ -35,7 +35,7 @@ describe("A mock of the addition function", function () {
 
 var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
-expectPromise = chai.expect;
+var expectPromise = chai.expect;
 
 describe("The asynchronous addition function", function () {
     it("should add 2+3 to get 5", function () {
